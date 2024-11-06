@@ -1,66 +1,28 @@
-/* Header.css */
-.container {
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .headerText {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .loggedInContainer {
-    text-align: center;
-  }
-  
-  .welcomeText {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .updateText {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .formContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .input {
-    width: 250px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    margin: 10px;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
-  .error {
-    color: red;
-    font-size: 14px;
-  }
-  
+.buttonsContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: auto;
+}
+
+.button {
+  padding: 8px 16px; /* Ajusta el padding para hacer los botones más pequeños */
+  font-size: 14px; /* Reduces el tamaño de la fuente */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease;
+  max-width: 150px; /* Limita el tamaño máximo del botón */
+  text-align: center; /* Asegura que el texto se alinee al centro */
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.loggedInContainer {
+  text-align: center; /* Centra el texto de bienvenida */
+}

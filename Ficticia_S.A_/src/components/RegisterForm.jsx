@@ -1,4 +1,3 @@
-// src/components/RegisterForm.jsx
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +18,7 @@ function RegisterForm() {
     otraEnfermedad: "",
   });
   
-  const navigate = useNavigate(); // Hook de navegación
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -37,7 +36,7 @@ function RegisterForm() {
       console.log("Datos enviados:", formData);
       alert("Datos cargados correctamente.");
       
-      // Redirige a la página de inicio
+     
       navigate("/"); 
     } catch (error) {
       console.error("Error al enviar el formulario:", error);

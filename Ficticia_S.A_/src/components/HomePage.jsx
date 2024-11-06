@@ -1,16 +1,16 @@
-// src/components/HomePage.jsx
 
-import "./HomePage.css"; // Asegúrate de crear este archivo para los estilos personalizados
 
+import "./HomePage.css"; 
+import imagen1 from "../assets/imagen1.jpg"
 function HomePage() {
     return (
         <div className="homepage">
-            {/* Fondo con el nombre de la empresa */}
+           
             <div className="background-banner">
                 <h1 className="background-text">Ficti Cia S.A.</h1>
             </div>
             
-            {/* Información de la empresa */}
+           
             <section className="content">
                 <h1>Bienvenidos a Ficti Cia S.A.</h1>
                 <p>
@@ -39,12 +39,10 @@ function HomePage() {
                     consultoría hasta la implementación de soluciones personalizadas.
                 </p>
 
-                {/* Imágenes de ejemplo */}
+              
                 <div className="image-gallery">
-                    <img src="https://via.placeholder.com/300" alt="Servicio 1" />
-                    <img src="https://via.placeholder.com/300" alt="Servicio 2" />
-                    <img src="https://via.placeholder.com/300" alt="Servicio 3" />
-                </div>
+            <img src={imagen1} alt="Servicio único" />
+        </div>
             </section>
         </div>
     );
